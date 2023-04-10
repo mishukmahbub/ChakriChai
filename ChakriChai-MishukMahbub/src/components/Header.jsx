@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <div className='flex justify-between items-center my-12 mx-12'>
-            <div><h1 className='font-extrabold text-3xl'>Chakri Chai</h1></div>
+            <div><h1 className='font-bold text-3xl'>Chakri Chai</h1></div>
             <nav className='flex gap-10'>
                 <NavLink to='/' className={({ isActive }) => (isActive ? "text-primary underline" : "")}>Home</NavLink>
                 <NavLink to='statistics' className={({ isActive }) => (isActive ? "text-primary underline" : "")}>Statistics</NavLink>
