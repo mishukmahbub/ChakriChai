@@ -1,9 +1,10 @@
 import React from 'react';
+import Banner from './Banner';
 
 const Showcase = () => {
     return (
         <div>
-            <h1>Showcase</h1>
+            <Banner></Banner>
         </div>
     );
 };
