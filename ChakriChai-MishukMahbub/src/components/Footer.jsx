@@ -4,7 +4,7 @@ import logo from '../assets/Icons/Group-9969.png'
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-10 bg-slate-900 text-white">
+            <footer className="footer p-10 ps-24 bg-slate-900 text-white">
                 <div className=''>
                     <h2 className='text-3xl font-bold'>Chakri Chai</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Unde numquam nisi perferendis vel <br /> repudiandae minima iste id expedita? </p>
@@ -30,14 +30,14 @@ const Footer = () => {
                     <a className="link link-hover">Privacy policy</a>
                     <a className="link link-hover">Cookie policy</a>
                 </div>
-                <div>
+                <div className='-me-12'>
                     <span className="footer-title">Contact</span>
                     <a className="link link-hover">Terms of use</a>
                     <a className="link link-hover">Privacy policy</a>
                     <a className="link link-hover">Cookie policy</a>
                 </div>
             </footer>
-            <footer className="footer px-10 py-4 border-t bg-slate-900 text-white border-slate-600">
+            <footer className="footer px-24 py-4 border-t bg-slate-900 text-white border-slate-600">
                 <div className="items-center grid-flow-col">
                 <p>@2023 ChakriChai. All Rights Reserved</p>
                 </div>
