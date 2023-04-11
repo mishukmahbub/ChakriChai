@@ -14,8 +14,7 @@
         "experience": "2-3 Years in this field.",
         "phone": "0123456789",
         "email": "info@gmail.com",
-        "address":"Dhanmondi 32, Sukrabad,
-        Dhaka, Bangladesh"
+        "address":"Dhanmondi 32, Sukrabad, Dhaka, Bangladesh"
     },
     {
         "id": "J-2",
@@ -32,8 +31,7 @@
         "experience": "1-2 Years in this field.",
         "phone": "0123456789",
         "email": "info@gmail.com",
-        "address":"Dhanmondi 32, Sukrabad,
-        Noakhali, Bangladesh"
+        "address":"Dhanmondi 32, Sukrabad, Noakhali, Bangladesh"
     },
     {
         "id": "J-3",
@@ -50,8 +48,7 @@
         "experience": "2-3 Years in this field.",
         "phone": "0123456789",
         "email": "info@gmail.com",
-        "address":"Dhanmondi 32, Sukrabad,
-        Chittagong, Bangladesh"
+        "address":"Dhanmondi 32, Sukrabad, Chittagong, Bangladesh"
     },
     {
         "id": "J-4",
@@ -68,11 +65,10 @@
         "experience": "2-3 Years in this field.",
         "phone": "0123456789",
         "email": "info@gmail.com",
-        "address":"Dhanmondi 32, Sukrabad,
-        Dhaka, Bangladesh"
-    }
-    {
-        "id": "J-5",
+        "address":"Dhanmondi 32, Sukrabad, Dhaka, Bangladesh"
+    },
+    {   
+        "id":"J-5",
         "logo": "../src/assets/Logo/Group 10021.png",
         "position": "Back-end Engineer",
         "company": "Airbnb",
@@ -86,9 +82,8 @@
         "experience": "2-3 Years in this field.",
         "phone": "0123456789",
         "email": "info@gmail.com",
-        "address":"Dhanmondi 32, Sukrabad,
-        Dhaka, Bangladesh"
-    }
+        "address":"Dhanmondi 32, Sukrabad, Dhaka, Bangladesh"
+    },
     {
         "id": "J-6",
         "logo": "../src/assets/Logo/netflix-4 1.png",
@@ -104,7 +99,6 @@
         "experience": "2-3 Years in this field.",
         "phone": "0123456789",
         "email": "info@gmail.com",
-        "address":"Dhanmondi 32, Sukrabad,
-        Dhaka, Bangladesh"
+        "address":"Dhanmondi 32, Sukrabad, Dhaka, Bangladesh"
     }
 ]

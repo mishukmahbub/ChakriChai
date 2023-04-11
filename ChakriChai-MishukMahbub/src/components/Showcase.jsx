@@ -6,6 +6,7 @@ import JobsCategory from './JobsCategory';
 
 const Showcase = () => {
     const jobsCategory = useLoaderData();
+    
     return (
         <div>
             <Banner></Banner>
