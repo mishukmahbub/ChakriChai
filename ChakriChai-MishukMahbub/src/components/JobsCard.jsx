@@ -1,6 +1,7 @@
 import React from 'react';
 import pinPoint from '../assets/Icons/Frame-4.png'
 import salary from '../assets/Icons/Frame.png'
+import { Link } from 'react-router-dom';
 
 const JobsCard = ({ job }) => {
 
@@ -30,7 +31,9 @@ const JobsCard = ({ job }) => {
                         </div>
                     </small>
                 </div>
-                <button className='btn btn-primary w-40 rounded-lg mt-6'>View Details</button>
+                <Link to={`/job-details/${job.id}`}>
+                    <button className='btn btn-primary w-40 rounded-lg mt-6'>View Details</button>
+                </Link>
             </div>
         </div>
     );
