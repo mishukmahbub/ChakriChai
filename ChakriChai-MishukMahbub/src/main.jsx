@@ -10,7 +10,6 @@ import Showcase from './components/Showcase';
 import Stat from './components/Stat';
 import Applied from './components/Applied';
 import Blog from './components/Blog';
-import jobCategoryLoader from './loaders/jobCategoryLoader';
 
 const router = createBrowserRouter([
   {
@@ -20,7 +19,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Showcase></Showcase>,
-        loader: jobCategoryLoader,
       },
       {
         path: "statistics",
