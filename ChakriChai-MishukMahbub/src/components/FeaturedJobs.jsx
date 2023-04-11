@@ -3,12 +3,16 @@ import JobsCard from './JobsCard';
 
 const FeaturedJobs = () => {
     const [data, setData] = useState([]);
-
+    const [showAll, setShowAll] = useState(false);
     useEffect(() => {
         fetch('/jobs.json')
             .then(response => response.json())
             .then(data => setData(data))
     }, []);
+
+    const handleShowAll = () => {
+        setShowAll(true);
+    };
 
     return (
         <div>
@@ -19,13 +23,20 @@ const FeaturedJobs = () => {
                 <div className=''>
                     <div className='grid md:grid-cols-2 gap-6 w-auto'>
                         {
-                            data.map(job => <JobsCard
+                            data.slice(0, showAll ? 6 : 4).map(job => <JobsCard
                                 key={job.id}
                                 job={job}
                             ></JobsCard>
                             )
                         }
                     </div>
+                </div>
+                <div className='text-center mt-10'>
+                    {!showAll && (
+                        <span className='' onClick={handleShowAll}>
+                            <button className='btn btn-primary rounded-lg'>See All Jobs</button>
+                        </span>
+                    )}
                 </div>
             </div>
         </div>
