@@ -1,6 +1,6 @@
 import React from 'react';
 
-const JobsCategory = ({jobCategory}) => {
+const JobsCategory = ({ jobCategory }) => {
     return (
         <div className="card w-96 bg-blue-100 shadow-xl">
             <figure className='p-8 -mb-8'><img className='-ms-32 bg-blue-200 p-4 rounded-lg' src={jobCategory.icon} alt="" /></figure>
