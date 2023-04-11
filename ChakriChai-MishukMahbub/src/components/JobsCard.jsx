@@ -15,8 +15,8 @@ const JobsCard = ({ job }) => {
                 </h2>
                 <p>{job.company}</p>
                 <div className='flex gap-4'>
-                    <button className="btn btn-outline btn-primary rounded-lg"><small>{job.office}</small></button>
-                    <button className="btn btn-outline btn-primary rounded-lg"><small>{job.type}</small></button>
+                    <button className="btn btn-outline btn-primary rounded-lg w-32"><small>{job.office}</small></button>
+                    <button className="btn btn-outline btn-primary rounded-lg w-32"><small>{job.type}</small></button>
                 </div>
                 <div className='flex gap-4 mt-4'>
                     <small>
@@ -30,7 +30,7 @@ const JobsCard = ({ job }) => {
                         </div>
                     </small>
                 </div>
-            <button className='btn btn-primary w-40 rounded-lg mt-6'>View Details</button>
+                <button className='btn btn-primary w-40 rounded-lg mt-6'>View Details</button>
             </div>
         </div>
     );
