@@ -24,7 +24,7 @@ const Showcase = () => {
                     }
                 </div>
             </div>
-
+            {/* Featured Jobs Section */}
             <FeaturedJobs></FeaturedJobs>
         </div>
     );
