@@ -1,7 +1,7 @@
 [
     {
         "id": "J-1",
-        "logo": "../src/assets/Logo/google-1-1 1-1.png",
+        "logo": "./google-1-1 1.png",
         "position": "Technical Database Engineer",
         "company": "Google LLC",
         "office": "Remote",
@@ -18,7 +18,7 @@
     },
     {
         "id": "J-2",
-        "logo": "../src/assets/Logo/netflix-4 1.png",
+        "logo": "./netflix-4 1.png",
         "position": "Senior Product Designer",
         "company": "Netflix",
         "office": "Onsite",
@@ -35,7 +35,7 @@
     },
     {
         "id": "J-3",
-        "logo": "../src/assets/Logo/tesla-9 1.png",
+        "logo": "./tesla-9 1.png",
         "position": "Software Engineer",
         "company": "Tesla",
         "office": "Remote",
@@ -52,7 +52,7 @@
     },
     {
         "id": "J-4",
-        "logo": "../src/assets/Logo/google-1-1 1.png",
+        "logo": "./google-1-1 1.png",
         "position": "Support Engineer",
         "company": "Google LLC",
         "office": "Onsite",
@@ -69,7 +69,7 @@
     },
     {   
         "id":"J-5",
-        "logo": "../src/assets/Logo/Group 10021.png",
+        "logo": "./Group 10021.png",
         "position": "Back-end Engineer",
         "company": "Airbnb",
         "office": "Remote",
@@ -86,7 +86,7 @@
     },
     {
         "id": "J-6",
-        "logo": "../src/assets/Logo/netflix-4 1.png",
+        "logo": "./netflix-4 1.png",
         "position": "Front-end engineer",
         "company": "Netflix",
         "office": "Onsite",
