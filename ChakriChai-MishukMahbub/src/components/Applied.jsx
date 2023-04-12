@@ -5,26 +5,19 @@ import AppliedCard from './AppliedCard';
 
 const Applied = () => {
     const jobDetails = useLoaderData();
-    // console.log(jobDetails);
     const getAppliedJobs = getShoppingCart()
-    // console.log(getAppliedJobs);
 
     const [jobs, setJobs] = useState([]);
+
     useEffect(() => {
         let jobsArr = []
         for (const id in getAppliedJobs) {
-            // console.log(id);
             const appliedJob = jobDetails.find(job => job.id === id)
-            // console.log(appliedJob);
             jobsArr.push(appliedJob)
         }
         setJobs(jobsArr)
     }, [])
-    // console.log(jobs);
 
-    useEffect(() => {
-        
-    }, [])
     const filterOnsite = () => {
         let onsiteArr = [];
         const onsite = jobs.filter(job => job.office === 'Onsite')
@@ -37,6 +30,7 @@ const Applied = () => {
         remoteArr.push(remote)
         setJobs(remoteArr[0]);
     };
+
     return (
         <div className='px-24 py-32 relative'>
             <div className="dropdown dropdown-bottom absolute top-16 right-24 dropdown-end">

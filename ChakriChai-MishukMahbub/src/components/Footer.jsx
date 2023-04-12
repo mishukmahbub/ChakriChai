@@ -7,7 +7,7 @@ const Footer = () => {
             <footer className="footer p-10 ps-24 bg-slate-900 text-white">
                 <div className=''>
                     <h2 className='text-3xl font-bold'>Chakri Chai</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Unde numquam nisi perferendis vel <br /> repudiandae minima iste id expedita? </p>
+                    <p>Uneasy barton seeing remark happen his has. <br/> Am possible offering at contempt mr distance! </p>
                     <img src={logo} alt="" />
                 </div>
                 <div>

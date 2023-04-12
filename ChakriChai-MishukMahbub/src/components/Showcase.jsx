@@ -13,7 +13,7 @@ const Showcase = () => {
             {/* JobsCategory */}
             <div className='mx-8 md:mx-24 my-8 md:my-32'>
                 <h2 className='text-xl md:text-5xl text-center font-extrabold'>Job Category List</h2>
-                <p className='text-center pt-4 pb-8'>Explore thousands of job opportunities with all the information you need. Its your future!</p>
+                <p className='text-center pt-4 pb-8'>Uneasy barton seeing remark happen his has. Am possible offering at contempt mr distance!</p>
 
                 <div className='md:flex gap-6'>
                     {
