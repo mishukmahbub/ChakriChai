@@ -10,7 +10,6 @@ import Showcase from './components/Showcase';
 import Stat from './components/Stat';
 import Applied from './components/Applied';
 import Blog from './components/Blog';
-import jobsCategoryLoader from './loaders/jobsCategoryLoader';
 import JobDetails from './components/JobDetails';
 
 const router = createBrowserRouter([
@@ -30,6 +29,7 @@ const router = createBrowserRouter([
       {
         path: "applied-jobs",
         element: <Applied></Applied>,
+        loader: () => fetch('/jobs.json')
       },
       {
         path: "blog",

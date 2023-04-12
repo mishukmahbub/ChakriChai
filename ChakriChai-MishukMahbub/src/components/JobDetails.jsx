@@ -5,6 +5,7 @@ import title from '../assets/Icons/Frame-1.png'
 import phone from '../assets/Icons/Frame-2.png'
 import email from '../assets/Icons/Frame-3.png'
 import address from '../assets/Icons/Frame-4.png'
+import { addToDb } from '../utilities/fakedb';
 
 const JobDetails = () => {
     const id = useParams();
@@ -14,7 +15,7 @@ const JobDetails = () => {
         const job = jobDetails.find(job => job.id === id.jobId)
         setDetails(job)
     }, []);
-    console.log(details);
+
     return (
         <div className='grid grid-cols-3 mx-24 my-32 gap-6'>
             <div className='col-span-2'>
@@ -62,7 +63,7 @@ const JobDetails = () => {
                     <br />
                 </div>
 
-                <button className='btn btn-primary w-full rounded-lg mt-6'>Apply Now</button>
+                <button onClick={() => addToDb(details.id)} className='btn btn-primary w-full rounded-lg mt-6'>Apply Now</button>
             </div>
         </div>
     );
