@@ -7,7 +7,7 @@ const JobsCard = ({ job }) => {
 
     return (
         <div className="card shadow-xl card-bordered">
-            <figure className='w-28 m-8 -mb-4'>
+            <figure className=' md:w-28 m-8 -mb-4'>
                 <img className='' src={job.logo} alt="" />
             </figure>
             <div className="card-body">
@@ -16,8 +16,8 @@ const JobsCard = ({ job }) => {
                 </h2>
                 <p>{job.company}</p>
                 <div className='flex gap-4'>
-                    <button className="btn btn-outline btn-primary rounded-lg w-32"><small>{job.office}</small></button>
-                    <button className="btn btn-outline btn-primary rounded-lg w-32"><small>{job.type}</small></button>
+                    <button className="btn btn-outline btn-primary rounded-lg md:w-32"><small>{job.office}</small></button>
+                    <button className="btn btn-outline btn-primary rounded-lg md:w-32"><small>{job.type}</small></button>
                 </div>
                 <div className='flex gap-4 mt-4'>
                     <small>
