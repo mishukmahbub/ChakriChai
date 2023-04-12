@@ -17,53 +17,58 @@ const JobDetails = () => {
     }, []);
 
     return (
-        <div className='grid grid-cols-3 mx-24 my-32 gap-6'>
-            <div className='col-span-2'>
-                <p><span className='font-bold'>Job Description: </span>{details.jobDesc}</p>
-                <br />
-                <p><span className='font-bold'>Job Responsibility: </span>{details.jobResponsibility}</p>
-                <br />
-                <p><span className='font-bold'>Educational Requirements: </span><br />{details.education}</p>
-                <br />
-                <p><span className='font-bold'>Experiences: </span><br />
-                    {details.experience}</p>
-                <br />
+        <div>
+            <div className='bg-blue-100 w-full h-32'>
+                <h1 className='text-4xl text-center font-extrabold'>Job Details</h1>
             </div>
-            <div>
-                <div className='bg-blue-100 p-8 rounded-lg'>
-                    <h3 className='font-bold'>Job Details</h3>
+            <div className='grid grid-cols-3 mx-24 my-32 gap-6'>
+                <div className='col-span-2'>
+                    <p><span className='font-bold'>Job Description: </span>{details.jobDesc}</p>
                     <br />
-                    <hr className='border-t-primary' />
+                    <p><span className='font-bold'>Job Responsibility: </span>{details.jobResponsibility}</p>
                     <br />
-                    <div className='flex gap-2'>
-                        <img src={salary} className='h-6' alt="" />
-                        <p><span className='font-bold'>Salary:</span> {details.salary} (Per Month)</p>
-                    </div>
-                    <div className='flex gap-2'>
-                        <img src={title} className='h-6' alt="" />
-                        <p><span className='font-bold'>Job Title:</span> {details.position}</p>
-                    </div>
+                    <p><span className='font-bold'>Educational Requirements: </span><br />{details.education}</p>
                     <br />
-                    <h3 className='font-bold'>Contact Information</h3>
-                    <br />
-                    <hr className='border-t-primary' />
-                    <br />
-                    <div className='flex gap-2'>
-                        <img src={phone} className='h-6' alt="" />
-                        <p><span className='font-bold'>Phone:</span> {details.phone}</p>
-                    </div>
-                    <div className='flex gap-2'>
-                        <img src={email} className='h-6' alt="" />
-                        <p><span className='font-bold'>Email:</span> {details.email}</p>
-                    </div>
-                    <div className='flex gap-2'>
-                        <img src={address} className='h-6' alt="" />
-                        <p><span className='font-bold'>Address:</span> {details.address}</p>
-                    </div>
+                    <p><span className='font-bold'>Experiences: </span><br />
+                        {details.experience}</p>
                     <br />
                 </div>
+                <div>
+                    <div className='bg-blue-100 p-8 rounded-lg'>
+                        <h3 className='font-bold'>Job Details</h3>
+                        <br />
+                        <hr className='border-t-primary' />
+                        <br />
+                        <div className='flex gap-2'>
+                            <img src={salary} className='h-6' alt="" />
+                            <p><span className='font-bold'>Salary:</span> {details.salary} (Per Month)</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <img src={title} className='h-6' alt="" />
+                            <p><span className='font-bold'>Job Title:</span> {details.position}</p>
+                        </div>
+                        <br />
+                        <h3 className='font-bold'>Contact Information</h3>
+                        <br />
+                        <hr className='border-t-primary' />
+                        <br />
+                        <div className='flex gap-2'>
+                            <img src={phone} className='h-6' alt="" />
+                            <p><span className='font-bold'>Phone:</span> {details.phone}</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <img src={email} className='h-6' alt="" />
+                            <p><span className='font-bold'>Email:</span> {details.email}</p>
+                        </div>
+                        <div className='flex gap-2'>
+                            <img src={address} className='h-6' alt="" />
+                            <p><span className='font-bold'>Address:</span> {details.address}</p>
+                        </div>
+                        <br />
+                    </div>
 
-                <button onClick={() => addToDb(details.id)} className='btn btn-primary w-full rounded-lg mt-6'>Apply Now</button>
+                    <button onClick={() => addToDb(details.id)} className='btn btn-primary w-full rounded-lg mt-6'>Apply Now</button>
+                </div>
             </div>
         </div>
     );
