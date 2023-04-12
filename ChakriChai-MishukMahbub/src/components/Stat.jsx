@@ -53,28 +53,33 @@ const Stat = () => {
     ];
 
     return (
-        <div className=''>
-            <RadarChart
-                className='mx-auto'
-                cx={400}
-                cy={250}
-                outerRadius={150}
-                width={780}
-                height={500}
-                data={data}
-            >
-                <PolarGrid />
-                <PolarAngleAxis dataKey="assignment" />
-                <PolarRadiusAxis />
-                <Radar
-                    name="Marks"
-                    dataKey="obtainedMark"
-                    stroke="#8884d8"
-                    fill="#8884d8"
-                    fillOpacity={0.6}
-                />
-                <Tooltip></Tooltip>
-            </RadarChart>
+        <div>
+            <div className='bg-blue-100 w-full h-32'>
+                <h1 className='text-4xl text-center font-extrabold'>Statistics</h1>
+            </div>
+            <div className=''>
+                <RadarChart
+                    className='mx-auto'
+                    cx={400}
+                    cy={250}
+                    outerRadius={150}
+                    width={780}
+                    height={500}
+                    data={data}
+                >
+                    <PolarGrid />
+                    <PolarAngleAxis dataKey="assignment" />
+                    <PolarRadiusAxis />
+                    <Radar
+                        name="Marks"
+                        dataKey="obtainedMark"
+                        stroke="#8884d8"
+                        fill="#8884d8"
+                        fillOpacity={0.6}
+                    />
+                    <Tooltip></Tooltip>
+                </RadarChart>
+            </div>
         </div>
     );
 };

@@ -6,7 +6,7 @@ import AppliedCard from './AppliedCard';
 const Applied = () => {
     const jobDetails = useLoaderData();
     const getAppliedJobs = getShoppingCart()
-    
+
     const [jobs, setJobs] = useState([]);
     const [showJobs, setShowJobs] = useState(jobs);
     console.log(showJobs);
@@ -19,7 +19,7 @@ const Applied = () => {
         setJobs(jobsArr)
         setShowJobs(jobsArr)
     }, [])
-    
+
     const filterOnsite = () => {
         let onsiteArr = [];
         const onsite = jobs.filter(job => job.office === 'Onsite')
@@ -34,21 +34,26 @@ const Applied = () => {
     };
 
     return (
-        <div className='px-24 py-32 relative'>
-            <div className="dropdown dropdown-bottom absolute top-16 right-24 dropdown-end">
-                <label tabIndex={0} className="btn btn-outline btn-primary rounded-lg">Filter</label>
-                <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 border-4">
-                    <li><a className='font-bold' onClick={filterOnsite}>Onsite</a></li>
-                    <li><a className='font-bold' onClick={filterRemote}>Remote</a></li>
-                </ul>
+        <div>
+            <div className='bg-blue-100 w-full h-32'>
+                <h1 className='text-4xl text-center font-extrabold'>Applied Jobs</h1>
             </div>
-            <div>
-                {
-                    showJobs.map(job => <AppliedCard
-                        key={job.id}
-                        job={job}
-                    />)
-                }
+            <div className='px-24 py-32 relative'>
+                <div className="dropdown dropdown-bottom absolute top-16 right-24 dropdown-end">
+                    <label tabIndex={0} className="btn btn-outline btn-primary rounded-lg">Filter</label>
+                    <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 border-4">
+                        <li><a className='font-bold' onClick={filterOnsite}>Onsite</a></li>
+                        <li><a className='font-bold' onClick={filterRemote}>Remote</a></li>
+                    </ul>
+                </div>
+                <div>
+                    {
+                        showJobs.map(job => <AppliedCard
+                            key={job.id}
+                            job={job}
+                        />)
+                    }
+                </div>
             </div>
         </div>
     );
