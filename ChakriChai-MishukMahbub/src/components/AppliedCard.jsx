@@ -4,7 +4,7 @@ import salaryImg from '../assets/Icons/Frame.png'
 import { Link } from 'react-router-dom';
 
 const AppliedCard = ({ job }) => {
-    // console.log(job);
+
     return (
         <div className=''>
             <div className='flex-col mb-6'>

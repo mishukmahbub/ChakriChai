@@ -6,9 +6,10 @@ import AppliedCard from './AppliedCard';
 const Applied = () => {
     const jobDetails = useLoaderData();
     const getAppliedJobs = getShoppingCart()
-
+    
     const [jobs, setJobs] = useState([]);
-
+    const [showJobs, setShowJobs] = useState(jobs);
+    console.log(showJobs);
     useEffect(() => {
         let jobsArr = []
         for (const id in getAppliedJobs) {
@@ -16,19 +17,20 @@ const Applied = () => {
             jobsArr.push(appliedJob)
         }
         setJobs(jobsArr)
+        setShowJobs(jobsArr)
     }, [])
-
+    
     const filterOnsite = () => {
         let onsiteArr = [];
         const onsite = jobs.filter(job => job.office === 'Onsite')
         onsiteArr.push(onsite)
-        setJobs(onsiteArr[0]);
+        setShowJobs(onsiteArr[0]);
     };
     const filterRemote = () => {
         let remoteArr = [];
         const remote = jobs.filter(job => job.office === 'Remote')
         remoteArr.push(remote)
-        setJobs(remoteArr[0]);
+        setShowJobs(remoteArr[0]);
     };
 
     return (
@@ -42,7 +44,7 @@ const Applied = () => {
             </div>
             <div>
                 {
-                    jobs.map(job => <AppliedCard
+                    showJobs.map(job => <AppliedCard
                         key={job.id}
                         job={job}
                     />)
