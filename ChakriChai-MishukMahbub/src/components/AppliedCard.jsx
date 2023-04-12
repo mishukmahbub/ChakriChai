@@ -35,7 +35,7 @@ const AppliedCard = ({ job }) => {
                         </div>
                     </div>
                     <Link className='col-span-1' to={`/job-details/${job.id}`}>
-                        <button className='btn btn-primary w-40 rounded-lg mt-6'>View Details</button>
+                        <button className='btn btn-primary w-40 rounded-lg'>View Details</button>
                     </Link>
                 </div>
             </div>
